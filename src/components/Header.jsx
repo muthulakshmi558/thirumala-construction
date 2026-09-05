@@ -241,11 +241,11 @@ function Header() {
                   onClick={() => setMenuOpen(false)}
                 />
 
-                <MobileAnchor
-                  text="Construction"
-                  href="/construction"
-                  onClick={() => setMenuOpen(false)}
-                />
+              <MobileRouterLink
+              text="Construction"
+              to="/construction"
+              onClick={() => setMenuOpen(false)}
+            />
 
                 {/* Mobile Manufacturing Dropdown */}
 
@@ -356,7 +356,7 @@ function Header() {
                     >
                       <MobileRouterLink
                         text="M Sand"
-                        to="=/building-materials/m-sand"
+                        to="/building-materials/m-sand"
                         onClick={() => setMenuOpen(false)}
                       />
 
