@@ -8,13 +8,12 @@ import {
   Thermometer,
   VolumeX,
   TimerReset,
-  Gauge,
+
   CircleDot,
   Droplets,
-  Shield,
+
   Settings,
-  Flame,
-  Zap,
+
   ArrowRight,
 } from "lucide-react";
 
@@ -22,11 +21,9 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-import product1 from "../assets/product1.png";
-import product2 from "../assets/product2.png";
-import product3 from "../assets/product3.png";
-import product4 from "../assets/product4.png";
-import product5 from "../assets/product5.png";
+import product1 from "../assets/brick_main.png";
+import product2 from "../assets/solid_blocks.png";
+import product3 from "../assets/septictank_ring.png";
 
 const products = [
   {
@@ -63,12 +60,12 @@ const products = [
 
   {
     id: "02",
-    title: "Hollow Block",
+    title: "Solid Block",
     image: product2,
     side: "right",
     accent: "cyan",
     description:
-      "Lightweight hollow blocks designed for efficient construction, reduced structural load and better thermal performance. Suitable for walls and partition applications.",
+      "Lightweight solid blocks designed for efficient construction, reduced structural load and better thermal performance. Suitable for walls and partition applications.",
     benefits: [
       {
         icon: Feather,
@@ -93,42 +90,12 @@ const products = [
     ],
   },
 
-  {
-    id: "03",
-    title: "Ready Made Compound Wall",
-    image: product3,
-    side: "left",
-    accent: "pink",
-    description:
-      "Precast compound wall systems designed for quick installation, superior durability and a clean modern finish. A reliable boundary solution for residential and commercial properties.",
-    benefits: [
-      {
-        icon: TimerReset,
-        title: "Quick Installation",
-        text: "Reduces site work and labour.",
-      },
-      {
-        icon: Gauge,
-        title: "High Durability",
-        text: "Built for long-term performance.",
-      },
-      {
-        icon: CircleDot,
-        title: "Neat Finish",
-        text: "Uniform and professional appearance.",
-      },
-      {
-        icon: Shield,
-        title: "Better Security",
-        text: "Creates a strong property boundary.",
-      },
-    ],
-  },
+  
 
   {
-    id: "04",
+    id: "03",
     title: "Septic Tank Ring",
-    image: product4,
+    image: product3,
     side: "right",
     accent: "cyan",
     description:
@@ -157,37 +124,7 @@ const products = [
     ],
   },
 
-  {
-    id: "05",
-    title: "AAC Block",
-    image: product5,
-    side: "left",
-    accent: "pink",
-    description:
-      "Autoclaved Aerated Concrete blocks provide lightweight construction, excellent insulation and reliable strength, making them ideal for modern energy-efficient buildings.",
-    benefits: [
-      {
-        icon: Feather,
-        title: "Lightweight",
-        text: "Reduces overall dead load.",
-      },
-      {
-        icon: Thermometer,
-        title: "Thermal Insulation",
-        text: "Helps maintain indoor comfort.",
-      },
-      {
-        icon: Flame,
-        title: "Fire Resistant",
-        text: "Provides improved fire safety.",
-      },
-      {
-        icon: Zap,
-        title: "Energy Efficient",
-        text: "Supports efficient building design.",
-      },
-    ],
-  },
+  
 ];
 
 function ManufacturingProducts() {

@@ -14,7 +14,7 @@ function TopBar() {
         <div className="flex items-center gap-6">
 
           <a
-            href="tel:+917200747474"
+            href="tel:+91 94422 55664"
             className="
               flex items-center gap-2
               hover:text-cyan-400
@@ -26,11 +26,11 @@ function TopBar() {
               className="text-pink-500"
             />
 
-            +91 72007 47474
+            +91 94422 55664
           </a>
 
           <a
-            href="tel:+919344747447"
+            href="tel:+91 97905 45122"
             className="
               flex items-center gap-2
               hover:text-cyan-400
@@ -42,7 +42,7 @@ function TopBar() {
               className="text-cyan-400"
             />
 
-            +91 93447 47447
+            +91 97905 45122
           </a>
 
         </div>
@@ -53,7 +53,7 @@ function TopBar() {
 
           {/* Email */}
           <a
-            href="mailto:info@thirumalaconstruction.com"
+            href="mailto:karishmababu7224@gmail.com"
             className="
               flex items-center gap-2
               hover:text-cyan-400
@@ -65,7 +65,7 @@ function TopBar() {
               className="text-pink-500"
             />
 
-            info@thirumalaconstruction.com
+            karishmababu7224@gmail.com
           </a>
 
 

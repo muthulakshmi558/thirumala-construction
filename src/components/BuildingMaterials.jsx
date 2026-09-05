@@ -1,42 +1,78 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 
-import cementImg from "../assets/material-cement.png";
-import mSandImg from "../assets/material-msand.png";
-import pSandImg from "../assets/material-psand.png";
-import flyashImg from "../assets/material-flyash.png";
-import quarryImg from "../assets/material-quarry.png";
+import mSandImg from "../assets/msand.png";
+import pSandImg from "../assets/psand.png";
+import riverSandImg from "../assets/riversand.png";
+import cementImg from "../assets/cement.png";
+import redBricksImg from "../assets/red_bricks.png";
+import AACBlockImg from "../assets/brick_main.png";
+import interlockImg from "../assets/interlock_mud_bricks.png";
+import JalliImg from "../assets/jalli.png";
+import QuarryImg from "../assets/quarry_stone.png";
+import gravelImg from "../assets/gravel.png";
+
 
 const materials = [
+  {
+    id: "m-sand",
+    title: "M Sand",
+    image: mSandImg,
+    accent: "pink",
+  },
+  {
+    id: "p-sand",
+    title: "P Sand",
+    image: pSandImg,
+    accent: "cyan",
+  },
+  {
+    id: "river-sand",
+    title: "River Sand",
+    image: riverSandImg,
+    accent: "pink",
+  },
   {
     id: "cement",
     title: "Cement",
     image: cementImg,
-    accent: "pink",
-  },
-  {
-    id: "m-sand",
-    title: "M-Sand",
-    image: mSandImg,
     accent: "cyan",
   },
   {
-    id: "p-sand",
-    title: "P-Sand",
-    image: pSandImg,
+    id: "red-bricks",
+    title: "Red Bricks",
+    image: redBricksImg,
     accent: "pink",
   },
   {
-    id: "flyash-bricks",
-    title: "Fly Ash Bricks",
-    image: flyashImg,
+    id: "aac-block",
+    title: "AAC Block",
+    image: AACBlockImg,
     accent: "cyan",
   },
   {
-    id: "quarry-stones",
-    title: "Quarry Stones",
-    image: quarryImg,
+    id: "interlock-mud-bricks",
+    title: "Interlock Mud Bricks",
+    image: interlockImg,
     accent: "pink",
+  },
+  {
+    id: "jalli",
+    title: "Jalli",
+    image: JalliImg,
+    accent: "cyan",
+  },
+  {
+    id: "quarry-stone",
+    title: "Quarry Stone",
+    image: QuarryImg,
+    accent: "pink",
+  },
+  {
+    id: "gravel",
+    title: "Gravel",
+    image: gravelImg,
+    accent: "cyan",
   },
 ];
 
@@ -47,13 +83,14 @@ function BuildingMaterials() {
       className="relative overflow-hidden bg-white py-20 lg:py-24"
     >
       {/* Background Decorations */}
+
       <div className="absolute -left-40 top-20 h-80 w-80 rounded-full bg-pink-100/40 blur-3xl" />
 
       <div className="absolute -right-40 bottom-10 h-80 w-80 rounded-full bg-cyan-100/40 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
-
         {/* Heading */}
+
         <motion.div
           initial={{
             opacity: 0,
@@ -73,7 +110,6 @@ function BuildingMaterials() {
           className="text-center"
         >
           <div className="flex items-center justify-center gap-3">
-
             <span className="h-[2px] w-10 bg-pink-500" />
 
             <p className="text-sm font-bold tracking-[0.22em] text-pink-500">
@@ -81,7 +117,6 @@ function BuildingMaterials() {
             </p>
 
             <span className="h-[2px] w-10 bg-cyan-400" />
-
           </div>
 
           <h2
@@ -113,10 +148,10 @@ function BuildingMaterials() {
 
             <span className="h-[3px] w-12 rounded-r-full bg-cyan-400" />
           </div>
-
         </motion.div>
 
         {/* Materials Grid */}
+
         <div
           className="
             mx-auto
@@ -126,80 +161,38 @@ function BuildingMaterials() {
             grid-cols-1
             gap-8
             sm:grid-cols-2
-            lg:grid-cols-6
+            lg:grid-cols-3
           "
         >
-          {materials.map((item, index) => {
-
-            /*
-              Desktop Layout:
-
-              01 - cols 1-2
-              02 - cols 3-4
-              03 - cols 5-6
-
-              04 - cols 2-3
-              05 - cols 4-5
-            */
-
-            const desktopPosition = [
-              "lg:col-span-2",
-              "lg:col-span-2",
-              "lg:col-span-2",
-              "lg:col-span-2 lg:col-start-2",
-              "lg:col-span-2",
-            ][index];
-
-            return (
-              <motion.div
-                key={item.id}
-
-                initial={{
-                  opacity: 0,
-                  y:
-                    index === 0 || index === 3
-                      ? 70
-                      : index === 1
-                      ? -70
-                      : 70,
-                  x:
-                    index === 0
-                      ? -50
-                      : index === 2
-                      ? 50
-                      : index === 3
-                      ? -40
-                      : index === 4
-                      ? 40
-                      : 0,
-                }}
-
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  y: 0,
-                }}
-
-                viewport={{
-                  once: false,
-                  amount: 0.25,
-                }}
-
-                transition={{
-                  duration: 0.7,
-                  delay: index * 0.08,
-                  ease: "easeOut",
-                }}
-
-                className={desktopPosition}
-              >
-                <MaterialCard item={item} index={index} />
-              </motion.div>
-            );
-          })}
+          {materials.map((item, index) => (
+            <motion.div
+              key={item.id}
+              initial={{
+                opacity: 0,
+                y: 60,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{
+                once: false,
+                amount: 0.25,
+              }}
+              transition={{
+                duration: 0.7,
+                delay: (index % 3) * 0.1,
+                ease: "easeOut",
+              }}
+              className={index === 9 ? "lg:col-start-2" : ""}
+            >
+              <MaterialCard item={item} index={index} />
+            </motion.div>
+          ))}
         </div>
 
         {/* View All Button */}
+
         <motion.div
           initial={{
             opacity: 0,
@@ -218,7 +211,7 @@ function BuildingMaterials() {
           className="mt-12 text-center"
         >
           <Link
-            to="/materials"
+            to="/building-materials"
             className="
               group
               relative
@@ -258,18 +251,18 @@ function BuildingMaterials() {
             </span>
           </Link>
         </motion.div>
-
       </div>
     </section>
   );
 }
 
-
 function MaterialCard({ item, index }) {
+  const number = String(index + 1).padStart(2, "0");
+
   return (
     <Link
-      to={`/materials/${item.id}`}
-      className="group block"
+      to={`/building-materials/${item.id}`}
+      className="group block h-full"
     >
       <motion.div
         whileHover={{
@@ -283,6 +276,7 @@ function MaterialCard({ item, index }) {
         }}
         className="
           relative
+          h-full
           overflow-hidden
           rounded-[26px]
           bg-white
@@ -293,8 +287,8 @@ function MaterialCard({ item, index }) {
           group-hover:shadow-[0_25px_70px_rgba(15,23,42,0.18)]
         "
       >
-
         {/* Image Container */}
+
         <div
           className="
             relative
@@ -305,7 +299,6 @@ function MaterialCard({ item, index }) {
             lg:h-[320px]
           "
         >
-
           <img
             src={item.image}
             alt={item.title}
@@ -320,7 +313,8 @@ function MaterialCard({ item, index }) {
             "
           />
 
-          {/* Very Light Overlay */}
+          {/* Light Overlay */}
+
           <div
             className="
               absolute
@@ -332,7 +326,8 @@ function MaterialCard({ item, index }) {
             "
           />
 
-          {/* Pink / Cyan Light */}
+          {/* Pink / Cyan Hover Light */}
+
           <div
             className={`
               absolute
@@ -341,14 +336,13 @@ function MaterialCard({ item, index }) {
               h-48
               w-48
               rounded-full
-              blur-3xl
               opacity-0
+              blur-3xl
               transition-all
               duration-700
               group-hover:right-0
               group-hover:top-0
               group-hover:opacity-30
-
               ${
                 item.accent === "pink"
                   ? "bg-pink-500"
@@ -357,7 +351,8 @@ function MaterialCard({ item, index }) {
             `}
           />
 
-          {/* Number */}
+          {/* Card Number */}
+
           <div
             className={`
               absolute
@@ -374,7 +369,6 @@ function MaterialCard({ item, index }) {
               font-black
               shadow-lg
               backdrop-blur
-
               ${
                 item.accent === "pink"
                   ? "text-pink-500"
@@ -382,15 +376,13 @@ function MaterialCard({ item, index }) {
               }
             `}
           >
-            0{index + 1}
+            {number}
           </div>
-
         </div>
 
+        {/* Material Title */}
 
-        {/* Title Only */}
         <div className="relative px-4 pb-5 pt-5">
-
           <h3
             className="
               text-center
@@ -406,7 +398,8 @@ function MaterialCard({ item, index }) {
             {item.title}
           </h3>
 
-          {/* Animated Line */}
+          {/* Animated Title Line */}
+
           <div
             className={`
               mx-auto
@@ -417,7 +410,6 @@ function MaterialCard({ item, index }) {
               transition-all
               duration-500
               group-hover:w-20
-
               ${
                 item.accent === "pink"
                   ? "bg-pink-500"
@@ -425,11 +417,10 @@ function MaterialCard({ item, index }) {
               }
             `}
           />
-
         </div>
 
+        {/* Animated Bottom Border */}
 
-        {/* Animated Border Bottom */}
         <div
           className={`
             absolute
@@ -442,7 +433,6 @@ function MaterialCard({ item, index }) {
             transition-all
             duration-500
             group-hover:w-[75%]
-
             ${
               item.accent === "pink"
                 ? "bg-pink-500"
@@ -450,7 +440,6 @@ function MaterialCard({ item, index }) {
             }
           `}
         />
-
       </motion.div>
     </Link>
   );

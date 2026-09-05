@@ -39,7 +39,7 @@ const Footer = () => {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Our Services</a></li>
+            <li><a href="/construction">Our Services</a></li>
             <li><a href="/projects">Our Projects</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
@@ -51,11 +51,11 @@ const Footer = () => {
           <h4>Our Services</h4>
 
           <ul>
-            <li><a href="/services">Residential Construction</a></li>
-            <li><a href="/services">Commercial Construction</a></li>
-            <li><a href="/services">Building Renovation</a></li>
-            <li><a href="/services">Interior Works</a></li>
-            <li><a href="/services">Turnkey Projects</a></li>
+            <li><a href="/projects">Residential Construction</a></li>
+            <li><a href="/projects">Commercial Construction</a></li>
+            <li><a href="/projects">Building Renovation</a></li>
+            <li><a href="/projects">Interior Works</a></li>
+            <li><a href="/projects">Turnkey Projects</a></li>
           </ul>
         </div>
 
@@ -67,22 +67,24 @@ const Footer = () => {
           <div className="contact-item">
             <span className="contact-icon">⌖</span>
             <p>
-              Coimbatore,<br />
+              60-A,Chinnasamy Nagar,<br/>
+              Ganapthy,Kovai - 641 006.
+              ,<br />
               Tamil Nadu, India
             </p>
           </div>
 
           <div className="contact-item">
             <span className="contact-icon">☎</span>
-            <a href="tel:+919999999999">
-              +91 99999 99999
+            <a href="tel:+91 94422 55664">
+              +91 94422 55664
             </a>
           </div>
 
           <div className="contact-item">
             <span className="contact-icon">✉</span>
-            <a href="mailto:info@thirumalaconstruction.com">
-              info@thirumalaconstruction.com
+            <a href="mailto:karishmababu7224@gmail.com">
+              karishmababu7224@gmail.com
             </a>
           </div>
         </div>
@@ -99,7 +101,7 @@ const Footer = () => {
 
         <p>
           Designed & Developed by{" "}
-          <a href="#">Aadhik Web Studio</a>
+          <a href="https://aadhikwebstudio.netlify.app/">Aadhik Web Studio</a>
         </p>
       </div>
 
@@ -108,7 +110,7 @@ const Footer = () => {
       <div className="floating-buttons">
 
         <a
-          href="tel:+919999999999"
+          href="tel:+91 94422 55664"
           className="float-btn phone-btn"
           aria-label="Call"
         >
@@ -116,7 +118,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://wa.me/8754322577"
+          href="https://wa.me/9442255664"
           className="float-btn whatsapp-btn"
           aria-label="WhatsApp"
         >

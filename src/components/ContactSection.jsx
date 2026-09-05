@@ -12,14 +12,16 @@ import {
 const contactDetails = {
   mobile1: "+91 94422 55664",
   mobile2: "+91 97905 45122",
-  email: "yourbusiness@gmail.com",
+  email: "karishmababu7224@gmail.com",
 
   // பின்னர் உங்கள் address மாற்றிக்கொள்ளவும்
-  address: "Your business address, Tamil Nadu.",
+  address: "60-A,Chinnasamy Nagar,Ganapthy,Kovai - 641 006.",
 
   // பின்னர் உங்கள் Google Map embed URL மாற்றவும்
+
+
   mapUrl:
-    "https://www.google.com/maps?q=Tamil%20Nadu&output=embed",
+    "https://www.google.com/maps?q=60-A%2C%20Chinnasamy%20Nagar%2C%20Ganapathy%2C%20Coimbatore%2C%20Tamil%20Nadu%20641006&output=embed",
 };
 
 const initialForm = {

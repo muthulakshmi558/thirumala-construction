@@ -1,23 +1,20 @@
 import React from "react";
 
-const HeroBricks = () => {
+const ConstructionsHero = () => {
   return (
     <section className="bricks-hero">
       <div className="bricks-hero-overlay"></div>
 
       <div className="bricks-hero-content">
-        <h1>FLY ASH BRICKS</h1>
 
         <div className="bricks-breadcrumb">
           <span>HOME</span>
           <span>/</span>
-          <span>OUR MANUFACTURING PRODUCTS</span>
-          <span>/</span>
-          <span>FLY ASH BRICKS</span>
+          <span>CONSTRUCTIONS </span>
         </div>
       </div>
     </section>
   );
 };
 
-export default HeroBricks;
+export default ConstructionsHero;

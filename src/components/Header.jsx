@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import {
   ArrowRight,
   CheckCircle2,
@@ -58,9 +59,22 @@ function Header() {
             {/* Desktop Menu */}
 
             <nav className="hidden items-center gap-8 xl:flex">
-              <NavLink text="Home" href="#home" />
+                <HashLink
+                smooth
+                to="/#home"
+                className="hover:text-orange-600 transition-colors"
+              >
+                Home
+              </HashLink>
 
-              <NavLink text="About" href="#about" />
+                <HashLink
+                  smooth
+                  to="/#about"
+                  className="hover:text-orange-600 transition-colors"
+                >
+                  About
+                </HashLink>              
+                <NavLink text="Construction" href="/construction" />
 
               <Dropdown title="Our Manufacturing Products">
                 <DropdownItem
@@ -73,15 +87,13 @@ function Header() {
                   to="/manufacturing-products/solid-blocks"
                 />
 
-                <DropdownItem
-                  text="Hollow Blocks"
-                  to="/manufacturing-products/hollow-blocks"
-                />
 
                 <DropdownItem
-                  text="Paver Blocks"
-                  to="/manufacturing-products/paver-blocks"
+                  text="Septic Tank Ring"
+                  to="/manufacturing-products/septictank-ring"
                 />
+              
+
               </Dropdown>
 
               <Dropdown title="Building Materials">
@@ -96,20 +108,55 @@ function Header() {
                 />
 
                 <DropdownItem
-                  text="Blue Metal"
-                  to="/building-materials/blue-metal"
+                  text="River Sand"
+                  to="/building-materials/river-sand"
                 />
 
                 <DropdownItem
                   text="Cement"
                   to="/building-materials/cement"
                 />
+
+                <DropdownItem
+                  text="Red Bricks"
+                  to="/building-materials/red-bricks"
+                />
+
+                <DropdownItem
+                  text="AAC Block"
+                  to="/building-materials/aac-block"
+                />
+
+                <DropdownItem
+                  text="Interlock Mud Bricks"
+                  to="/building-materials/interlock-mud-bricks"
+                />
+
+                <DropdownItem
+                  text="Jalli"
+                  to="/building-materials/jalli"
+                />
+
+                <DropdownItem
+                  text="Quarry Stone"
+                  to="/building-materials/quarry-stone"
+                />
+
+                <DropdownItem
+                  text="Gravel"
+                  to="/building-materials/gravel"
+                />
               </Dropdown>
 
               <NavLink text="Projects" href="/projects" />
 
-              <NavLink text="Contact" href="#contact" />
-            </nav>
+              <HashLink
+                smooth
+                to="/#contact"
+                className="hover:text-orange-600 transition-colors"
+              >
+                Contact
+              </HashLink>            </nav>
 
             {/* Desktop Quote Button */}
 
@@ -184,13 +231,19 @@ function Header() {
               <div className="flex flex-col gap-4 px-6 py-5">
                 <MobileAnchor
                   text="Home"
-                  href="#home"
+                  href="/#home"
                   onClick={() => setMenuOpen(false)}
                 />
 
                 <MobileAnchor
                   text="About"
-                  href="#about"
+                  href="/#about"
+                  onClick={() => setMenuOpen(false)}
+                />
+
+                <MobileAnchor
+                  text="Construction"
+                  href="/construction"
                   onClick={() => setMenuOpen(false)}
                 />
 
@@ -249,16 +302,12 @@ function Header() {
                       />
 
                       <MobileRouterLink
-                        text="Hollow Blocks"
-                        to="/manufacturing-products/hollow-blocks"
+                        text="Septictank Rings"
+                        to="/manufacturing-products/septictank-rings"
                         onClick={() => setMenuOpen(false)}
                       />
 
-                      <MobileRouterLink
-                        text="Paver Blocks"
-                        to="/manufacturing-products/paver-blocks"
-                        onClick={() => setMenuOpen(false)}
-                      />
+
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -307,7 +356,7 @@ function Header() {
                     >
                       <MobileRouterLink
                         text="M Sand"
-                        to="/building-materials/m-sand"
+                        to="=/building-materials/m-sand"
                         onClick={() => setMenuOpen(false)}
                       />
 
@@ -318,14 +367,44 @@ function Header() {
                       />
 
                       <MobileRouterLink
-                        text="Blue Metal"
-                        to="/building-materials/blue-metal"
+                        text="River Sand"
+                        to="/building-materials/river-sand"
                         onClick={() => setMenuOpen(false)}
                       />
 
                       <MobileRouterLink
                         text="Cement"
                         to="/building-materials/cement"
+                        onClick={() => setMenuOpen(false)}
+                      />
+                      <MobileRouterLink
+                        text="Red Bricks"
+                        to="/building-materials/red-bricks"
+                        onClick={() => setMenuOpen(false)}
+                      />
+                      <MobileRouterLink
+                        text="AAC Block"
+                        to="/building-materials/aac-block"
+                        onClick={() => setMenuOpen(false)}
+                      />
+                      <MobileRouterLink
+                        text="Interlock Mud Bricks"
+                        to="/building-materials/interlock-mud-bricks"
+                        onClick={() => setMenuOpen(false)}
+                      />
+                      <MobileRouterLink
+                        text="Jalli"
+                        to="building-materials/jalli"
+                        onClick={() => setMenuOpen(false)}
+                      />
+                      <MobileRouterLink
+                        text="Quarry Stone"
+                        to="building-materials/quarry-stone"
+                        onClick={() => setMenuOpen(false)}
+                      />
+                        <MobileRouterLink
+                        text="Gravel"
+                        to="building-materials/gravel"
                         onClick={() => setMenuOpen(false)}
                       />
                     </motion.div>
@@ -340,7 +419,7 @@ function Header() {
 
                 <MobileAnchor
                   text="Contact"
-                  href="#contact"
+                  href="/#contact"
                   onClick={() => setMenuOpen(false)}
                 />
 
