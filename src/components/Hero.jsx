@@ -23,41 +23,41 @@ const slides = [
   {
     image: hero1,
     small: "ECO-FRIENDLY SOLUTION",
-    title: "Advanced",
-    highlight: "Fly Ash",
-    last: "Bricks",
+    title: "Residential ",
+    highlight: "Construction",
+    last: "",
     description:
-      "High-quality sustainable fly ash bricks built for strength, durability and modern construction.",
+      "Individual houses, villas and modern residential buildings.",
   },
 
   {
     image: hero2,
     small: "STRONGER FOUNDATIONS",
-    title: "Premium",
-    highlight: "Solid",
-    last: "Blocks",
+    title: "Interior ",
+    highlight: "Design",
+    last: "",
     description:
-      "Precision manufactured solid blocks designed for dependable residential and commercial construction.",
+      "Stylish and functional interiors for every part of your home.",
   },
 
   {
     image: hero3,
     small: "MODERN CONSTRUCTION",
-    title: "Quality",
-    highlight: "Building",
-    last: "Materials",
+    title: "Commercial ",
+    highlight: "Construction",
+    last: "",
     description:
-      "Reliable construction materials delivered with quality and consistency for every project.",
+      "Reliable construction for offices, shops and commercial spaces.",
   },
 
   {
     image: hero4,
     small: "BUILD WITH CONFIDENCE",
-    title: "Trusted",
-    highlight: "Construction",
-    last: "Partner",
+    title: "Renovation  ",
+    highlight: "Remodeling",
+    last: "",
     description:
-      "From materials to complete construction solutions, we help turn your ideas into lasting structures.",
+      "Transform existing properties with modern designs and finishes.",
   },
 ];
 

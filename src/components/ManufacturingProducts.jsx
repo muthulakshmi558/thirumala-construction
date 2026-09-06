@@ -21,7 +21,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-import product1 from "../assets/brick_main.png";
+import product1 from "../assets/fly_ash_bricks.png";
 import product2 from "../assets/solid_blocks.png";
 import product3 from "../assets/septictank_ring.png";
 

@@ -9,10 +9,10 @@ import {
 
 import { FaWhatsapp } from "react-icons/fa";
 
-import about1 from "../assets/about1.png";
-import about2 from "../assets/about2.png";
-import about3 from "../assets/about3.png";
-import about4 from "../assets/about4.png";
+import about1 from "../assets/House3.jpeg";
+import about2 from "../assets/House6.jpeg";
+import about3 from "../assets/interior4.jpeg";
+import about4 from "../assets/House5.jpeg";
 
 function About() {
   const features = [
@@ -73,11 +73,18 @@ function About() {
 
               {/* Heading */}
               <h2 className="mt-4 text-4xl md:text-5xl font-black text-gray-900">
-                ABOUT{" "}
+                WE DO  {" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-                  US
+                  CONSTRUCTION
                 </span>
               </h2>
+
+                <h4 className="mt-4 text-4xl md:text-2xl font-black text-gray-900">
+                WE ALSO SELL {" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
+                  CONSTRUCTION MATERIALS
+                </span>
+              </h4>
 
               {/* Underline */}
               <div className="mt-5 flex">
@@ -87,19 +94,17 @@ function About() {
 
               {/* Content */}
               <p className="mt-7 text-gray-600 leading-7 text-[15px]">
-                Welcome to Thirumala Construction, a trusted name in quality
-                construction materials and reliable building solutions. We
-                focus on delivering durable products, consistent quality and
-                dependable service for every project.
+                From planning to final completion, we provide reliable construction solutions with quality materials, skilled workmanship and complete project support.
               </p>
 
+
+              <p className="mt-5 text-gray-600 leading-7 text-[15px]">We build strong, modern and comfortable individual houses, villas and residential buildings based on your requirements and budget.</p>
               <p className="mt-5 text-gray-600 leading-7 text-[15px]">
                 From fly ash bricks and solid blocks to essential building
                 materials, our goal is to support residential and commercial
                 construction with products designed for strength, efficiency
                 and long-term performance.
               </p>
-
               {/* Features */}
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
                 {features.map((item, index) => (
@@ -591,7 +596,7 @@ function CallSection() {
 
             {/* WHATSAPP CARD */}
             <motion.a
-              href="https://wa.me/919442255664?text=Hi%20Thirumala%20Construction,%20I%20would%20like%20to%20know%20more%20about%20your%20products."
+              href="https://wa.me/919790545122?text=Hi%20Thirumala%20Construction,%20I%20would%20like%20to%20know%20more%20about%20your%20products."
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{
@@ -643,7 +648,7 @@ function CallSection() {
               </p>
 
               <h3 className="mt-2 text-xl md:text-2xl font-bold text-white">
-                +91 94422 55664
+                +91 97905 45122
               </h3>
 
               <p className="mt-3 text-sm text-gray-400">

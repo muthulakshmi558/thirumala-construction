@@ -12,10 +12,10 @@ import {
 const contactDetails = {
   mobile1: "+91 94422 55664",
   mobile2: "+91 97905 45122",
-  email: "karishmababu7224@gmail.com",
+  email: "tcconstruction7224@gmail.com",
 
   // பின்னர் உங்கள் address மாற்றிக்கொள்ளவும்
-  address: "60-A,Chinnasamy Nagar,Ganapthy,Kovai - 641 006.",
+  address: "60-A,Chinnasamy Nagar,Ganapthy,Coimbatore - 641 006.",
 
   // பின்னர் உங்கள் Google Map embed URL மாற்றவும்
 

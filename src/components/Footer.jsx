@@ -51,11 +51,11 @@ const Footer = () => {
           <h4>Our Services</h4>
 
           <ul>
-            <li><a href="/projects">Residential Construction</a></li>
-            <li><a href="/projects">Commercial Construction</a></li>
-            <li><a href="/projects">Building Renovation</a></li>
-            <li><a href="/projects">Interior Works</a></li>
-            <li><a href="/projects">Turnkey Projects</a></li>
+            <li><a href="/construction">Constrcution</a></li>
+            <li><a href="/manufacturing-products/fly-ash-bricks">Our Manufacturing products</a></li>
+            <li><a href="/building-materials/m-sand">Building Materials</a></li>
+            <li><a href="/construction">Interior Works</a></li>
+            <li><a href="/construction">Building Construction</a></li>
           </ul>
         </div>
 
@@ -68,7 +68,7 @@ const Footer = () => {
             <span className="contact-icon">⌖</span>
             <p>
               60-A,Chinnasamy Nagar,<br/>
-              Ganapthy,Kovai - 641 006.
+              Ganapthy,Coimbatore - 641 006.
               ,<br />
               Tamil Nadu, India
             </p>

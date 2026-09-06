@@ -6,7 +6,7 @@ import pSandImg from "../assets/psand.png";
 import riverSandImg from "../assets/riversand.png";
 import cementImg from "../assets/cement.png";
 import redBricksImg from "../assets/red_bricks.png";
-import AACBlockImg from "../assets/brick_main.png";
+import AACBlockImg from "../assets/aac_block.png";
 import interlockImg from "../assets/interlock_mud_bricks.png";
 import JalliImg from "../assets/jalli.png";
 import QuarryImg from "../assets/quarry_stone.png";
@@ -211,7 +211,7 @@ function BuildingMaterials() {
           className="mt-12 text-center"
         >
           <Link
-            to="/building-materials"
+            to="/#contact"
             className="
               group
               relative
@@ -261,7 +261,7 @@ function MaterialCard({ item, index }) {
 
   return (
     <Link
-      to={`/building-materials/${item.id}`}
+      to={`/#contact/${item.id}`}
       className="group block h-full"
     >
       <motion.div

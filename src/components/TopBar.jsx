@@ -53,7 +53,7 @@ function TopBar() {
 
           {/* Email */}
           <a
-            href="mailto:karishmababu7224@gmail.com"
+            href="mailto:tcconstruction7224@gmail.com"
             className="
               flex items-center gap-2
               hover:text-cyan-400
@@ -65,7 +65,7 @@ function TopBar() {
               className="text-pink-500"
             />
 
-            karishmababu7224@gmail.com
+            tcconstruction7224@gmail.com
           </a>
 
 

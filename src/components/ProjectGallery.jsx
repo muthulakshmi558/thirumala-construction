@@ -28,11 +28,14 @@ import interior11 from "../assets/interior11.jpeg";
 import interior12 from "../assets/interior12.jpeg";
 import interior13 from "../assets/interior13.jpeg";
 import interior14 from "../assets/interior14.jpeg";
+
 import gate1 from "../assets/gate1.jpeg";
 import gate2 from "../assets/gate2.jpeg";
 import gate3 from "../assets/gate3.jpeg";
 import terrace from "../assets/terrace.jpeg";
 import terrace1 from "../assets/terrace1.jpeg";
+import underconstructionhome from "../assets/Under_construction_home.jpeg";
+import underconstruction from "../assets/Under_construction.jpeg";
 
 
 
@@ -238,6 +241,22 @@ const projects = [
     category: "Residential",
     location: "Coimbatore",
     image: terrace1,
+    size: "normal",
+  },
+      {
+    id: 24,
+    title: "Construction",
+    category: "Residential",
+    location: "Coimbatore",
+    image: underconstructionhome,
+    size: "normal",
+  },
+      {
+    id: 24,
+    title: "Construction",
+    category: "Residential",
+    location: "Coimbatore",
+    image: underconstruction,
     size: "normal",
   },
 
